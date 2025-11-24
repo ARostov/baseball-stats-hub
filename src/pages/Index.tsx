@@ -1,12 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Hero from "@/components/Hero";
+import WeeklySchedule from "@/components/WeeklySchedule";
+import WarmupCooldown from "@/components/WarmupCooldown";
+import StrengthTraining from "@/components/StrengthTraining";
+import PostBaseball from "@/components/PostBaseball";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Hero />
+      <WeeklySchedule />
+      <WarmupCooldown />
+      <StrengthTraining />
+      <PostBaseball />
+      
+      <footer className="gradient-hero text-white py-8 text-center">
+        <div className="container mx-auto px-6">
+          <p className="text-lg font-bold mb-2">⚾ Будь сильным, быстрым и выносливым!</p>
+          <p className="text-sm opacity-75">Тренируйся усердно и становись чемпионом</p>
+        </div>
+      </footer>
     </div>
   );
 };
