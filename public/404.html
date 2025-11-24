@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Baseball Stats Hub</title>
+    <script>
+        // Перенаправляем на главную страницу для SPA
+        sessionStorage.redirect = location.pathname;
+        window.location.href = '/baseball-stats-hub/' + location.search + location.hash;
+    </script>
+</head>
+<body>
+<noscript>
+    <h1>Baseball Stats Hub</h1>
+    <p>If you are not redirected automatically, <a href="/baseball-stats-hub/">click here</a>.</p>
+</noscript>
+</body>
+</html>
