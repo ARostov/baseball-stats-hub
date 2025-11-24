@@ -7,6 +7,11 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig({
   plugins: [react()],
   base: '/baseball-stats-hub/',
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
   build: {
     outDir: 'dist',
     assetsDir: 'assets'
