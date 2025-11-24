@@ -17,7 +17,7 @@ export default defineConfig({
     // Важно для SPA - чтобы index.html обрабатывал все пути
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
+        main: path.resolve(__dirname, 'index.html'),
       },
     },
   }
